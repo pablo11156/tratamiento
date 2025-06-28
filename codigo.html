@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto a Voz WAV</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Texto a Voz (.wav)</h1>
+    <textarea id="texto" placeholder="Escribe tu texto aquí..."></textarea>
+    <div class="botones">
+      <button onclick="leerYGrabar()">🔊 Reproducir y Grabar</button>
+      <button onclick="generarWAV()">🛠️ Generar WAV</button>
+      <button id="descargarBtn" onclick="descargarWAV()" style="display:none;">⬇️ Descargar WAV</button>
+    </div>
+    <audio id="audio" controls style="display:none;"></audio>
+  </div>
+
+  <script src="formulas.js"></script>
+</body>
+</html>
